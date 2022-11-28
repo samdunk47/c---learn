@@ -1,27 +1,16 @@
 #include <iostream>
+#include <vector>
 #include <string>
-#include <cmath>
 
-class MyClass
-{
-public:
-    int myNum;
-    void myMethod();
-};
-
-void MyClass::myMethod()
-{
-    std::cout << myNum << std::endl;
-}
+using namespace std;
 
 int main()
 {
-    MyClass myObj;
+    vector<string> msg {"Hello", "C++", "World", "from", "VS Code", "and the C++ extension!"};
 
-    myObj.myNum = 15;
-
-    myObj.myMethod();
-
-    return 0;
+    for (const string& word : msg)
+    {
+        cout << word << " ";
+    }
+    cout << endl;
 }
-
