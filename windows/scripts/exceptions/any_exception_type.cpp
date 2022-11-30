@@ -16,10 +16,10 @@ int main()
             throw 505;
         }
     }
-    catch (int myNum)
+    catch (...)
     {
         std::cerr << "Access denied - you must be at least 18 years old" << std::endl;
-        std::cerr << "Error number: " << myNum << std::endl;
     }
+
     return 0;
 }
